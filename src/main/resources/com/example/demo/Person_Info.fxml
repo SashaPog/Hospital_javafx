@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1220.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.PersonInfo">
+   <left>
+      <VBox fx:id="profileVBox" prefHeight="200.0" prefWidth="340.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="127.0" prefWidth="340.0">
+               <children>
+                  <Text fx:id="profileLogo" strokeType="OUTSIDE" strokeWidth="0.0" text="Hospital" textAlignment="CENTER" wrappingWidth="340.0">
+                     <font>
+                        <Font name="System Bold Italic" size="70.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox  prefHeight="613.0" prefWidth="340.0">
+               <children>
+                  <Button fx:id="pageProfile" mnemonicParsing="false" onAction="#ProfileButton" prefHeight="102.0" prefWidth="340.0" text="Профиль">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="pageDoctorAppointment" mnemonicParsing="false" onAction="#AppointmentButton" prefHeight="102.0" prefWidth="340.0" text="Направлення">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="pageDoctors" mnemonicParsing="false" onAction="#DoctorsListButton" prefHeight="103.0" prefWidth="340.0" text="Лікарі">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="pageExit" mnemonicParsing="false" onAction="#ExitButton" prefHeight="103.0" prefWidth="340.0" text="Вихід">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="73.0" prefWidth="882.0" spacing="30.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Детальна Інформація" textAlignment="CENTER" wrappingWidth="881.13671875">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox prefHeight="380.0" prefWidth="882.0" spacing="85.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="882.0" spacing="80.0">
+                     <children>
+                        <Label prefHeight="44.0" prefWidth="41.0" text="Ім'я">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Text fx:id="profileName" strokeType="OUTSIDE" strokeWidth="0.0" text="Ім'я" wrappingWidth="377.080078125">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="38.0" prefWidth="882.0" spacing="80.0">
+                     <children>
+                        <Label text="Прізвище">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Text fx:id="profileSurName" strokeType="OUTSIDE" strokeWidth="0.0" text="Прізвище" wrappingWidth="428.080078125">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="38.0" prefWidth="882.0" spacing="80.0">
+                     <children>
+                        <Label prefHeight="53.0" prefWidth="207.0" text="Дата народження">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Text fx:id="profileDate" strokeType="OUTSIDE" strokeWidth="0.0" text="Дата народження" wrappingWidth="482.080078125">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="292.0" prefWidth="882.0" spacing="50.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Контактна інформація" textAlignment="CENTER" wrappingWidth="881.13671875">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+                  <HBox prefHeight="38.0" prefWidth="882.0" spacing="80.0">
+                     <children>
+                        <Label prefHeight="53.0" prefWidth="207.0" text="Номер телефону">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Text fx:id="pofilePhone" strokeType="OUTSIDE" strokeWidth="0.0" text="Номер телефону" wrappingWidth="418.080078125">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="38.0" prefWidth="882.0" spacing="80.0">
+                     <children>
+                        <Label prefHeight="53.0" prefWidth="207.0" text="Електронна пошта">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Text fx:id="profileEmail" strokeType="OUTSIDE" strokeWidth="0.0" text="Електронна пошта" wrappingWidth="471.080078125">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

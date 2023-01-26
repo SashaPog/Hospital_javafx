@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1220.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.DoctorAppointment">
+    <left>
+        <VBox fx:id="profileVBox" prefHeight="200.0" prefWidth="340.0" spacing="30.0" BorderPane.alignment="CENTER">
+            <children>
+                <VBox prefHeight="127.0" prefWidth="340.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hospital" textAlignment="CENTER" wrappingWidth="340.0">
+                            <font>
+                                <Font name="System Bold Italic" size="70.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </VBox>
+                <VBox prefHeight="613.0" prefWidth="340.0">
+                    <children>
+                        <Button fx:id="pageProfile" mnemonicParsing="false" onAction="#ProfileButton" prefHeight="102.0" prefWidth="340.0" text="Профиль">
+                            <font>
+                                <Font size="48.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="pageDoctorAppointment" mnemonicParsing="false" onAction="#AppointmentButton" prefHeight="102.0" prefWidth="340.0" text="Направлення">
+                            <font>
+                                <Font size="36.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="pageDoctors" mnemonicParsing="false" onAction="#DoctorsListButton" prefHeight="103.0" prefWidth="340.0" text="Лікарі">
+                            <font>
+                                <Font size="36.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="pageExit" mnemonicParsing="false" onAction="#ExitButton" prefHeight="103.0" prefWidth="340.0" text="Вихід">
+                            <font>
+                                <Font size="36.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="63.0" prefWidth="880.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Реєстрація до лікаря" textAlignment="CENTER" wrappingWidth="879.13671875">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="30.0">
+               <children>
+                  <HBox prefHeight="62.0" prefWidth="880.0" spacing="80.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Виберіть лікаря">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </Text>
+                        <ChoiceBox fx:id="chooseDoctor" prefHeight="40.0" prefWidth="260.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </ChoiceBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="62.0" prefWidth="880.0" spacing="80.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Виберіть дату" wrappingWidth="258.068359375">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </Text>
+                        <DatePicker fx:id="chooseDate" onAction="#DatePicker" prefHeight="40.0" prefWidth="260.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="300.0" prefWidth="880.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Опишіть ситуацію" wrappingWidth="849.13671875">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+                  </Text>
+                  <TextField fx:id="describeSituation" onAction="#DescribeField" prefHeight="232.0" prefWidth="820.0">
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_RIGHT" prefHeight="115.0" prefWidth="880.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="BView" mnemonicParsing="false" onAction="#BView" prefHeight="61.0" prefWidth="251.0" text="Переглянути" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="buttonSend" mnemonicParsing="false" onAction="#SendButton" prefHeight="61.0" prefWidth="251.0" text="Відправити" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="320.0" right="30.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

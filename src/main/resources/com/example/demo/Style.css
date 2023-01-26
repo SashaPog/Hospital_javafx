@@ -1,0 +1,78 @@
+#LoginSignInButton{
+    -fx-background-color: green;
+    -fx-border-radius: 0px;
+    -fx-text-fill: white;
+}
+
+#anchorpane{
+    -fx-background-color: #333232;
+}
+#authSignInButton{
+    -fx-border-radius: 10;
+}
+#profileVBox{
+    -fx-background-color: #333232;
+    -fx-border-color: black;
+}
+
+#pageProfile{
+    -fx-background-color: #333232;
+    -fx-border-color: black;
+    -fx-text-fill: white;
+}
+
+#pageProfile:hover{
+    -fx-background-color: #222323;
+}
+
+#pageDoctorAppointment{
+    -fx-background-color: #333232;
+    -fx-border-color: black;
+    -fx-text-fill: white;
+}
+
+#pageDoctorAppointment:hover{
+    -fx-background-color: #222323;
+}
+
+#pageDoctors{
+    -fx-background-color: #333232;
+    -fx-border-color: black;
+    -fx-text-fill: white;
+}
+
+#pageDoctors:hover{
+    -fx-background-color: #222323;
+}
+
+#pageExit{
+    -fx-background-color: #333232;
+    -fx-border-color: black;
+    -fx-text-fill: white;
+}
+
+#pageExit:hover{
+    -fx-background-color: #222323;
+}
+
+#pageDateAppointment{
+    -fx-background-color: #333232;
+    -fx-border-color: black;
+    -fx-text-fill: white;
+}
+
+#pageDateAppointment:hover{
+    -fx-background-color: #222323;
+}
+
+#profileLogo{
+    -fx-text-fill: white;
+}
+
+#Authfemele{
+    -fx-text-fill: black;
+}
+
+#Authmale{
+    -fx-text-fill: black;
+}
